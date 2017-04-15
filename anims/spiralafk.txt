@@ -1,0 +1,70 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["UseLua"] = true,
+				["ClassName"] = "command",
+				["UniqueID"] = "69744900",
+				["String"] = "hook.Add(\"AFK\",\"a\",function(pl,afk) if pl == LocalPlayer() then pl:ConCommand(\"pac_event afk \"..(afk and 1 or 0)) end end)",
+			},
+		},
+		[2] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Velocity"] = 10,
+						["UniqueID"] = "904989621",
+						["Color1"] = Vector(86, 184, 255),
+						["FireDelay"] = 1,
+						["EndSize"] = 10,
+						["ClassName"] = "particles",
+						["Angles"] = Angle(31.375, 83.1875, 0),
+						["Position"] = Vector(1.29296875, 10.84375, -0.8154296875),
+						["Lighting"] = false,
+						["Material"] = "effects/sleepy001",
+						["DieTime"] = 2,
+						["Gravity"] = Vector(0, 0, 10),
+					},
+				},
+				[2] = {
+					["children"] = {
+					},
+					["self"] = {
+						["OwnerCycle"] = true,
+						["ClassName"] = "animation",
+						["UniqueID"] = "3762517458",
+						["SequenceName"] = "idle_all_02",
+					},
+				},
+				[3] = {
+					["children"] = {
+					},
+					["self"] = {
+						["URL"] = "https://dl.dropboxusercontent.com/u/33549121/pac3/spiralsleep.txt",
+						["ClassName"] = "custom_animation",
+						["UniqueID"] = "3390411904",
+					},
+				},
+			},
+			["self"] = {
+				["AffectChildrenOnly"] = true,
+				["ClassName"] = "event",
+				["Invert"] = true,
+				["Event"] = "command",
+				["UniqueID"] = "567226017",
+				["Arguments"] = "afk",
+				["EditorExpand"] = true,
+			},
+		},
+	},
+	["self"] = {
+		["Name"] = "afk",
+		["ClassName"] = "group",
+		["UniqueID"] = "1640703554",
+		["EditorExpand"] = true,
+	},
+},
